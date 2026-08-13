@@ -66,10 +66,34 @@ h1,h2,h3,h4,h5,h6.p{
 
 /* =========== banner css style start ========== */
 #banner{
-     background-image: linear-gradient(to bottom right, #f9e0eb, #eddbe4,#fefbfe);
+     padding-bottom: 90px;
+    position: relative;
+    background-color: white;
 }
 .bannerFlex{
     display: flex;
+}
+#banner::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 13%, 0% 100%, 100% 100%);
+    background-color: rgba(255, 100, 136, 0.03);
+    z-index: 2;
+}
+#banner::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 59%, 0% 100%, 100% 100%);
+    background-color: rgba(255, 100, 136, 0.04);
+    z-index: 1;
 }
 .fastLine{
     display: flex;
@@ -144,6 +168,7 @@ h1,h2,h3,h4,h5,h6.p{
     height: 150px;
     background-color: #FFFFFF;
     padding: 25px;
+    z-index: 4;
 }
 .imgBoxFlex{
     display: flex;
@@ -248,6 +273,152 @@ h1,h2,h3,h4,h5,h6.p{
 }
 /* =========== banner css style end ========== */
 
+/* =========== logo css style start ========== */
+#logo{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.logoFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.boxOne{
+    width: 250px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.boxOne img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========== logo css style end ========== */
+
+/* =========== service css style start ========== */
+#service{
+    padding-bottom: 100px;
+    position: relative;
+}
+.serviceImg{
+    position: absolute;
+    left: 500px;
+    bottom: 20px;
+}
+.serviceImg img{
+    width: 120px;
+    height: 120px;
+}
+.serviceWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.serviceLeft h5{
+    font-size: 16px;
+    color: #F17216;
+    font-weight: 400;
+    line-height: 27px;
+    padding-bottom: 15px;
+}
+.serviceLeft h3{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 25px;
+    color: #282C4B;
+    width: 300px;
+}
+.serviceLeft p{
+    font-size: 18px;
+    color: #747582;
+    font-weight: 400;
+    line-height: 27px;
+    width: 300px;
+}
+.serviceRight{
+    display: flex;
+    gap: 90px;
+}
+.forcest{
+    padding: 30px;
+    transition: all linear 0.40s;
+}
+.forcest:hover{
+    box-shadow: 30px 30px 33px 30px rgba(121, 121, 121, 0.05);
+}
+.forcest img{
+    width: 40px;
+    height: 45px;
+    padding-bottom: 10px;
+}
+.forcest h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #14183E;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.forcest p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #747582;
+    width: 170px;
+}
+.raising{
+    padding: 30px;
+    transition: all linear 0.40s;
+}
+.raising:hover{
+    box-shadow: 30px 30px 33px 30px rgba(121, 121, 121, 0.05);
+}
+.raising img{
+    width: 40px;
+    height: 45px;
+    padding-bottom: 10px;
+}
+.raising h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #14183E;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+.raising p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #747582;
+    width: 170px;
+}
+.cashFlow{
+    padding: 30px;
+    transition: all linear 0.40s;
+}
+.cashFlow:hover{
+    box-shadow: 30px 30px 33px 30px rgba(121, 121, 121, 0.05);
+}
+.cashFlow img{
+    width: 40px;
+    height: 45px;
+    padding-bottom: 10px;
+}
+.cashFlow h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #14183E;
+   padding-top: 20px;
+    padding-bottom: 25px;
+}
+.cashFlow p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #747582;
+    width: 170px;
+}
+/* =========== service css style end ========== */
 /* =========== navbar css style start ========== */
 /* =========== navbar css style end ========== */
 
