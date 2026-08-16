@@ -419,17 +419,267 @@ h1,h2,h3,h4,h5,h6.p{
     width: 170px;
 }
 /* =========== service css style end ========== */
-/* =========== navbar css style start ========== */
-/* =========== navbar css style end ========== */
 
-/* =========== navbar css style start ========== */
-/* =========== navbar css style end ========== */
+/* =========== bannerTwo css style start ========== */
+#bannerTwo{
+    margin-top: 50px;
+    background-color: #1c1450;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+#bannerTwo::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 13%, 0% 100%, 100% 100%);
+    background-color: rgba(218, 201, 205, 0.03);
+    z-index: 2;
+}
+#bannerTwo::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0 59%, 0% 100%, 100% 100%);
+    background-color: rgba(241, 202, 211, 0.04);
+    z-index: 3;
+}
+.bannerTwoFlex{
+    display: flex;
+    gap: 120px;
+    align-items: center;
+}
+.bannerTwoImg{
+    position: relative;
+}
+.bannerTwoImg img{
+    width: 710px;
+    height: 600px;
+    
+}
+.snck3{
+    position: absolute;
+    content: "";
+    right: 80px;
+    top: 100px;
+    width: 120px;
+    height: 150px;
+    overflow: hidden;
+}
+.snck3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.bannerTwoRight span{
+    font-size: 24px;
+    font-weight: 400;
+    color: #F17216;
+}
+.bannerTwoRight h3 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 52px;
+    color: white;
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.bannerTwoRight p{
+    font-size: 26px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #CED1E5;
+    margin-top: 20px;
+}
+.bannerTwoRight p i{
+    padding-right: 40px;
+    color: #CED1E5;
+}
+.bannerBtn2{
+    display: flex;
+    gap: 30px;
+   
+}
+.bannerBtn2 button{
+    margin-top: 50px;
+    padding: 15px 25px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to bottom right,#FF698D, #FB3F6C);
+     z-index: 10;
+    border: 1px solid white;
+    font-weight: bold;
+    font-size: 18px;
+   
+    border-radius: 25px;
+    transition: all linear 0.50s;
+}
+.bannerBtn2 button:hover{
+    color: #282C4B;
+    background-image: none;
+    background-color: white;
+}
+/* =========== bannerTwo css style end ========== */
 
-/* =========== navbar css style start ========== */
-/* =========== navbar css style end ========== */
+/* =========== marketing css style start ========== */
+#marketing{
+    padding-bottom: 50px;
+}
+.marketingFlex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+.marketingBox{
+    width: 32%;
+    padding: 15px 15px 20px 15px ;
+    text-align: center;
+    transition: all linear 0.50s;
 
-/* =========== navbar css style start ========== */
-/* =========== navbar css style end ========== */
+}
+.marketingBox:hover{
+    box-shadow: 18px 10px 33px 0 rgba(123, 67, 67, 0.1);
+}
+.marketingImg img{
+    width: 100%;
+    height: 80%;
+}
+.marketingImg h4{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 18px;
+    color: #14183E;
+}
+.marketingBox2{
+    width: 32%;
+    padding: 25px 15px 20px 15px ;
+}
+.marketingBox2 p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #F17216;
+    padding-bottom: 25px;
+}
+.marketingBox2 h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    width: 300px;
+    color: #282C4B;
+    padding-bottom: 35px;
+}
+.marketingBox2 button{
+    /* margin-top: 50px; */
+    padding: 15px 25px;
+    border: none;
+    color: #282C4B;
+    background-color: white;
+    border: 1px solid #FF698D;
+    font-weight: bold;
+    font-size: 18px;
+   
+    border-radius: 25px;
+    transition: all linear 0.50s;
+}
+.marketingBox2 button:hover{
+    color: white;
+    background-color: #FF698D;
+}
+/* =========== marketing css style end ========== */
+
+/* =========== testimonial css style start ========== */
+#testimonial{
+    padding-top: 50px;
+    background-image: linear-gradient(to bottom right, rgba(243, 232, 234, 0.3), rgba(250, 248, 249, 0.514));
+}
+.testimonialContent p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #F17216;
+    padding-bottom: 12px;
+}
+.testimonialContent h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #282C4B;
+    width: 270px;
+}
+.testimonialImg{
+    margin-top: 69px;
+    position: relative;
+}
+.ImgContent{
+    width: 534px;
+    height: 327px;
+    position: absolute;
+    top: -72px;
+    right: -86px;
+    background-color: white;
+    padding: 30px 32px;
+}
+.ImgContent i{
+    color: #FB3F6C;
+    font-size: 40px;
+}
+.ImgContent p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    color: #5D6473;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.ImgContentFlex{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+.circleImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.ImgContentFlex h4{
+    font-weight: bold;
+    font-size: 22px;
+}
+/* =========== testimonial css style end ========== */
+
+/* =========== contact css style start ========== */
+#contact{
+    padding-top: 50px;
+}
+.contactFlex{
+    display: flex;
+    gap: 57px;
+}
+.contactImg {
+    position: relative;
+}
+.contactBox1{
+    position: absolute;
+    bottom: 35px;
+    right: 95px;
+}
+.contactBox2{
+    position: absolute;
+    left: 0;
+    top: 85px;
+}
+/* =========== contact css style end ========== */
 
 /* =========== navbar css style start ========== */
 /* =========== navbar css style end ========== */
