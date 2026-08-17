@@ -55,11 +55,11 @@ h1,h2,h3,h4,h5,h6.p{
     font-size: 14px;
     background-color: white;
     border-radius: 25px;
-    transition: all 0.50s;
+    transition: all linear 0.50s;
 }
 .navbarbtn button:hover{
     background-color: #FF698D;
-    border: transparent;
+    border:1px solid transparent;
     color: white;
 }
 /* =========== navbar css style end ========== */
@@ -133,6 +133,7 @@ h1,h2,h3,h4,h5,h6.p{
 .bannerBtn{
     display: flex;
     gap: 30px;
+    z-index: 8;
 }
 .bannerBtn button{
     margin-top: 50px;
@@ -146,6 +147,7 @@ h1,h2,h3,h4,h5,h6.p{
    
     border-radius: 25px;
     transition: all linear 0.50s;
+    z-index: 10;
 }
 .bannerBtn button:hover{
     color: #282C4B;
@@ -661,6 +663,7 @@ h1,h2,h3,h4,h5,h6.p{
 /* =========== contact css style start ========== */
 #contact{
     padding-top: 50px;
+    padding-bottom: 80px;
 }
 .contactFlex{
     display: flex;
@@ -679,10 +682,197 @@ h1,h2,h3,h4,h5,h6.p{
     left: 0;
     top: 85px;
 }
+.contactText h5{
+    font-weight: 400;
+    font-size: 16px;
+    color: #F17216;
+    padding-bottom: 12px;
+}
+.contactText h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    color: #282C4B;
+    padding-bottom: 40px;
+}
+.textOne h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 11px;
+    color: #14183E;
+}
+.textOne input{
+    width: 539px;
+    height: 58px;
+    background-color: #FFF8F8;
+    padding: 15px 0 15px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #14183E;
+    border: none;
+}
+.textOne input:focus{
+    border: none;
+    outline: none;
+}
+.textOneFlex{
+    display: flex;
+    gap: 25px;
+    margin-top: 30px;
+}
+.textTwo h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 11px;
+    color: #14183E;
+}
+.textTwo input{
+    width: 257px;
+    height: 58px;
+    background-color: #FFF8F8;
+    padding: 15px 0 15px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #14183E;
+    border: none;
+}
+.textTwo input:focus{
+    border: none;
+    outline: none;
+}
+.textThree h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 11px;
+    color: #14183E;
+}
+.textThree input{
+    width: 257px;
+    height: 58px;
+    background-color: #FFF8F8;
+    padding: 15px 0 15px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #14183E;
+    border: none;
+}
+.textThree input:focus{
+    border: none;
+    outline: none;
+}
+.textFour h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 11px;
+    color: #14183E;
+    padding-top: 30px;
+}
+.textFour textarea{
+    width: 539px;
+    height: 116px;
+    background-color: #FFF8F8;
+    padding: 15px 0 15px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #14183E;
+    border: none;
+    resize:none;
+}
+.textFour textarea:focus{
+    border: none;
+    outline: none;
+}
+.contactTextBtn button{
+    margin-top: 60px;
+    padding: 24px 42px;
+    border: none;
+    color: white;
+    background-image: linear-gradient(to bottom right,#FF698D, #FB3F6C);
+     z-index: 10;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 192px;
+    transition: all linear 0.50s;
+}
+.contactTextBtn button:hover{
+    color: #282C4B;
+    background-image: none;
+    background-color: white;
+    border: transparent;
+}
 /* =========== contact css style end ========== */
 
-/* =========== navbar css style start ========== */
-/* =========== navbar css style end ========== */
+/* =========== footer css style start ========== */
+#footer{
+    background-color: #282C4B;
+    padding: 62px 0;
+    margin-bottom: 100px;
+}
+.footerWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerContent{
+    display: flex;
+    align-items: center;
+}
+.footerContentOne p{
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    padding-right: 73px;
+}
+.footerContentOne p span{
+    font-size: 20px;
+    padding-right: 5px;
+}
+.footerContentTwo ul{
+    display: flex;
+    gap: 30px;
+    padding-right: 47px;
+}
+.footerContentTwo ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+}
+.footerContentThree{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.footerContentThree p{
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+}
+.ContentThreeFlex{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.wrapBox{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapBox i{
+    color: #FB3F6C;
+}
+/* =========== footer css style end ========== */
 
 /* =========== navbar css style start ========== */
 /* =========== navbar css style end ========== */
